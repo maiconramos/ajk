@@ -1,0 +1,183 @@
+$color_primary: #ec4000;
+$color_second: #ffffff;
+$color_white: #fff;
+$color_black: #111111;
+$font_primary: "Open Sans";
+$logo_width: 180px;
+$logo_height: 81px;
+
+$login_background: url('../img/background-login.jpg');
+
+/*** Desabilitar Menus ***/
+
+
+
+//Fundo do Painel
+
+.wp-admin {
+  background: $color_primary;
+  background-size: 400% 400%;
+  font-family: $font_primary;
+}
+
+#adminmenu li a:focus div.wp-menu-image:before, #adminmenu li.opensub div.wp-menu-image:before, #adminmenu li:hover div.wp-menu-image:before{
+  color: $color_second;
+}
+
+#wpadminbar {
+  background: $color_primary;
+  background-size: cover;
+  padding: 7px 0px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.33);
+}
+
+#wpwrap {
+  background: transparent;
+  margin-top: 11px;
+}
+
+#wpcontent {
+  background: rgba(255, 255, 255, 0.90);
+  border-radius: 5px;
+  margin-right: 10px;
+  margin-top: 20px;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+}
+
+#adminmenu,
+#adminmenu .wp-submenu,
+#adminmenuback,
+#adminmenuwrap {
+  background: $color_primary;
+}
+
+// Sidebar Painel
+
+#adminmenu li.menu-top {
+  background: transparent;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.3);
+  margin: 10px;
+  border-radius: 3px;
+  border: 1px solid rgba(255, 255, 255, 0.32);
+}
+
+
+
+#adminmenu .wp-not-current-submenu .wp-submenu{
+  background:  rgb(50, 55, 60);
+  border-radius: 5px;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+  left: 138px;
+
+}
+#adminmenu .wp-submenu a:hover, #adminmenu a:hover{
+  color: #eee;
+}
+
+#adminmenu .wp-has-current-submenu .wp-submenu{
+  background: transparent;
+}
+
+#adminmenu a , #adminmenu .wp-submenu a , #adminmenu li.menu-top:hover, #adminmenu li.opensub>a.menu-top, #adminmenu li>a.menu-top:focus{
+  color: #fff;
+}
+
+// TOP Menu
+
+#wp-admin-bar-wp-logo{
+  display: none;
+}
+
+.wp-menu-name {
+  font-family: "Open Sans";
+  line-height: 25px;
+  font-weight: 100;
+}
+
+div.wp-menu-image:before {
+  padding: 11px 0;
+}
+.folded div.wp-menu-image:before {
+  padding: 8px 0;
+}
+
+#adminmenu li.wp-has-current-submenu a.wp-has-current-submenu,
+#adminmenu li.menu-top:hover,
+#adminmenu li.opensub>a.menu-top,
+#adminmenu li>a.menu-top:focus {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.folded #wpcontent, .folded #wpfooter{
+  margin-left: 58px;
+}
+#collapse-menu{margin: 10px;}
+#collapse-button{color: #fff}
+#collapse-button:focus, #collapse-button:hover{color: #eee;}
+#wpfooter {
+  background: transparent;
+  color: #ffffff;
+  bottom: -42px;
+}
+#wpfooter a{
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+
+}
+
+/*** tela de Login ***/
+
+.login {
+  background-image: $login_background;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+.login form{
+  -webkit-box-shadow: 0 1px 3px rgba(23, 23, 23, 0.7);
+  -moz-box-shadow: 0 1px 3px rgba(23, 23, 23, 0.7);
+  box-shadow: 0 1px 3px rgba(23, 23, 23, 0.7);
+}
+
+#login h1 a,
+.login h1 a {
+  background-image: url(../img/wtek.png);
+  height: $logo_height;
+  width: $logo_width;
+  background-size: $logo_width $logo_height;
+  background-repeat: no-repeat;
+}
+
+#login {
+  padding: 5% 0 0!important;
+}
+// Input
+
+input[type=text]:focus, input[type=search]:focus, input[type=radio]:focus, input[type=tel]:focus, input[type=time]:focus, input[type=url]:focus, input[type=week]:focus, input[type=password]:focus, input[type=checkbox]:focus, input[type=color]:focus, input[type=date]:focus, input[type=datetime]:focus, input[type=datetime-local]:focus, input[type=email]:focus, input[type=month]:focus, input[type=number]:focus, select:focus, textarea:focus{
+  border-color: $color_primary;
+  box-shadow: 0 0 2px rgba(30,140,190,.8);
+}
+
+
+//** Esqueci a senha **/
+.login #backtoblog a,
+.login #nav a {
+  color: #777!important;
+}
+
+/** Botão Login **/
+
+.wp-core-ui .button-primary {
+  background: $color_primary!important;
+  border-color: $color_primary!important;
+  box-shadow: 0 1px 0 $color_primary!important;
+  text-shadow: none!important;
+}
+
+.wp-core-ui .button-primary:hover {
+  background: $color_black!important;
+  border-color: $color_black!important;
+}
+

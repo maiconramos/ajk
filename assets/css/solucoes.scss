@@ -1,0 +1,213 @@
+$laranja: #fe4500;
+
+@font-face {
+  font-family: "Ubuntu Light";
+  src: url(../fonts/ubuntu-light.woff2);
+}
+@font-face {
+  font-family: "Ubuntu Regular";
+  src: url(../fonts/ubuntu-regular.woff2);
+}
+@font-face {
+  font-family: "Nexa Light";
+  src: url(../fonts/nexa-light.woff2);
+}
+@font-face {
+  font-family: "Nexa Regular";
+  src: url(../fonts/nexa-regular.woff2);
+}
+@font-face {
+  font-family: "Nexa Bold";
+  src: url(../fonts/nexa-bold.woff2);
+}
+
+#menu-principal{
+  background-color: $laranja;
+}
+.banner{
+  background-image: url("../img/banner-solucoes.jpg");
+  background-position: center;
+  background-size: cover;
+  min-height: 280px;
+  margin: -50px 0 0px;
+  position: relative;
+}
+.oem{
+  padding-top: 120px;
+  padding-bottom: 80px;
+  .image-solucao{
+    margin: 30px auto;
+  }
+  p{
+    font-size: 18px;
+    font-family: "Nexa Light";
+    text-align: justify;
+    color: rgb(125, 125, 125);
+    line-height: 25px;
+  }
+  article{
+    text-align: center;
+    ul{
+      padding: 0px;
+      list-style: none;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+      justify-content: space-around;
+      -webkit-align-content: stretch;
+      -ms-flex-line-pack: stretch;
+      align-content: stretch;
+      -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+      align-items: flex-start;
+    }
+    li{
+      -webkit-order: 0;
+      -ms-flex-order: 0;
+      order: 0;
+      -webkit-flex: 0 1 130px;
+      -ms-flex: 0 1 130px;
+      flex: 0 1 130px;
+      -webkit-align-self: auto;
+      -ms-flex-item-align: auto;
+      align-self: auto;
+    }
+    .icone-solucao{
+      max-width: 70px;
+      margin: 30px auto;
+      -webkit-animation-duration: 1s;
+      animation-duration: 1s;
+      -webkit-animation-fill-mode: both;
+      animation-fill-mode: both;
+      &:hover{
+        -webkit-animation-name: jello;
+        animation-name: jello;
+        -webkit-transform-origin: center;
+        transform-origin: center;
+      }
+    }
+    h5{
+      font-family: "Nexa Bold";
+      font-size: 15px;
+      text-transform: uppercase;
+      color: $laranja;
+    }
+  }
+}
+.title-category-product{
+  background-image: url("../img/fundo-categoria-nome.png");
+  background-position: center;
+  background-size: cover;
+  width: 360px;
+  height: 167px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, 25%);
+  bottom: -70px;
+  text-align: center;
+  padding-top: 70px;
+  h1, h3{
+    font-size: 33px;
+    font-family: "Nexa Bold";
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+  }
+}
+.title-product{
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  bottom: -70px;
+  text-align: center;
+  padding-top: 70px;
+  h3{
+    font-size: 40px;
+    font-family: "Nexa Bold";
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+  }
+}
+.contato{
+  margin-top: 90px;
+  text-align: center;
+  h4{
+    text-align: center;
+    font-size: 30px;
+    font-family: "Nexa Bold";
+    color: $laranja;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+  }
+}
+form{
+  font-family: "Nexa Light";
+  text-align: left;
+  font-size: 15px;
+  color: #7d7d7d;
+  p{
+    margin-bottom: 5px;
+    margin-top: 10px;
+    font-size: 12px;
+  }
+  input , textarea , select{background-color: transparent; width: 100%; border: 1px solid $laranja; margin-bottom: 10px; padding: 5px 20px;
+    border-radius: 20px;
+    resize: none; &:focus{outline: none}}
+  textarea{height: 230px}
+  [type=submit]{
+    background-color: $laranja;
+    border-color: $laranja;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 5px 40px;
+    letter-spacing: 2px;
+    font-size: 12px;
+    cursor: pointer;
+    width: auto;
+    &:hover{
+      background-color: #ff6f3a;
+    }
+  }
+}
+
+
+@media (max-width: 845px){
+  .produtos-categoria{
+    .item{
+      -webkit-order: 0;
+      -ms-flex-order: 0;
+      order: 0;
+      -webkit-flex: 0 1 100%;
+      -ms-flex: 0 1 100%;
+      flex: 0 1 100%;
+      -webkit-align-self: auto;
+      -ms-flex-item-align: auto;
+      align-self: auto;
+      margin-bottom: 40px;
+    }
+    .title a{
+      font-size: 20px;
+    }
+  }
+  .title-category-product{
+    width: 270px;
+    height: 125px;
+    transform: translate(-50%, 50%);
+    padding-top: 55px;
+    h1{
+      font-size: 25px;
+    }
+  }
+}
+

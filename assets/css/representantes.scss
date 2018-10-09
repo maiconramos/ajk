@@ -1,0 +1,109 @@
+$laranja: #fe4500;
+
+@font-face {
+  font-family: "Ubuntu Light";
+  src: url(../fonts/ubuntu-light.woff2);
+}
+@font-face {
+  font-family: "Ubuntu Regular";
+  src: url(../fonts/ubuntu-regular.woff2);
+}
+@font-face {
+  font-family: "Nexa Light";
+  src: url(../fonts/nexa-light.woff2);
+}
+@font-face {
+  font-family: "Nexa Regular";
+  src: url(../fonts/nexa-regular.woff2);
+}
+@font-face {
+  font-family: "Nexa Bold";
+  src: url(../fonts/nexa-bold.woff2);
+}
+#svg-map2{width: 98%}
+#svg-map2 path { fill: #656565; stroke: #ffffff; stroke-width : "1"; cursor:pointer; }
+#svg-map2 a{ text-decoration:none }
+#svg-map2 a:hover { cursor:pointer; text-decoration:none }
+#svg-map2 a:hover path{ fill: $laranja !important }
+#svg-map2 .ts-mapaSelecionado{ fill: $laranja !important }
+.banner{
+  background-image: url("../img/fundo-representantes.jpg");
+  background-position: center;
+  background-size: cover;
+  min-height: 280px;
+  margin: -50px 0 0px;
+  position: relative;
+}
+.title-category-product{
+  background-image: url("../img/fundo-categoria-nome.png");
+  background-position: center;
+  background-size: cover;
+  width: 360px;
+  height: 167px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, 25%);
+  bottom: -70px;
+  text-align: center;
+  padding-top: 70px;
+  h1, h3{
+    font-size: 31px;
+    font-family: "Nexa Bold";
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+  }
+}
+.title-product{
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  bottom: -70px;
+  text-align: center;
+  padding-top: 70px;
+  h3{
+    font-size: 40px;
+    font-family: "Nexa Bold";
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+  }
+}
+.representantes{
+  padding-top: 120px;
+  padding-bottom: 60px;
+}
+.descr{
+  text-align: center;
+  max-width: 450px;
+  margin: 0px auto 40px;
+  font-size: 20px;
+  font-family: "Nexa Light";
+}
+
+.divisor{
+  height: 300px;
+  width: 2px;
+  background-color: #c3c3c3;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 50px;
+
+}
+.representante-exterior{
+  font-family: "Nexa Light";
+  strong{font-family: "Nexa Regular"}
+  h4{font-family: "Nexa Bold"; color: $laranja; text-transform: uppercase}
+  a{color: $laranja}
+}
+.representante {
+  position: relative;
+  display: none;
+  font-family: "Nexa Light";
+  strong{font-family: "Nexa Regular"}
+  h4{font-family: "Nexa Bold"; color: $laranja; text-transform: uppercase}
+  a{color: $laranja}
+}
+.title{font-family: "Nexa Bold"; color: $laranja; text-transform: uppercase}

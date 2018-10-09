@@ -1,0 +1,37 @@
+@font-face {
+  font-family: "Ubuntu Light";
+  src: url(../fonts/ubuntu-light.woff2); }
+@font-face {
+  font-family: "Ubuntu Regular";
+  src: url(../fonts/ubuntu-regular.woff2); }
+@font-face {
+  font-family: "Nexa Light";
+  src: url(../fonts/nexa-light.woff2); }
+@font-face {
+  font-family: "Nexa Regular";
+  src: url(../fonts/nexa-regular.woff2); }
+@font-face {
+  font-family: "Nexa Bold";
+  src: url(../fonts/nexa-bold.woff2); }
+.assistencia {
+  padding: 20px 0; }
+
+.manuais {
+  padding: 20px 0;
+  margin-top: 40px;
+  background-color: #f2f2f2;
+  font-family: "Nexa Light"; }
+  .manuais .list-group-item {
+    padding: 1.5rem 1.25rem .75rem;
+    border: none; }
+  .manuais .list-group-item:first-child, .manuais .list-group-item:last-child {
+    border-radius: 0px; }
+  .manuais .list-group-item:nth-child(odd) {
+    background: #efefef; }
+  .manuais a {
+    color: #fe4500;
+    font-family: "Nexa Light"; }
+    .manuais a img {
+      margin-left: 5px; }
+
+/*# sourceMappingURL=suporte.css.map */

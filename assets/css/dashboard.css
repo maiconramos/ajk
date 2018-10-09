@@ -1,0 +1,140 @@
+@charset "UTF-8";
+/*** Desabilitar Menus ***/
+.wp-admin {
+  background: #ec4000;
+  background-size: 400% 400%;
+  font-family: "Open Sans"; }
+
+#adminmenu li a:focus div.wp-menu-image:before, #adminmenu li.opensub div.wp-menu-image:before, #adminmenu li:hover div.wp-menu-image:before {
+  color: #ffffff; }
+
+#wpadminbar {
+  background: #ec4000;
+  background-size: cover;
+  padding: 7px 0px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.33); }
+
+#wpwrap {
+  background: transparent;
+  margin-top: 11px; }
+
+#wpcontent {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 5px;
+  margin-right: 10px;
+  margin-top: 20px;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1); }
+
+#adminmenu,
+#adminmenu .wp-submenu,
+#adminmenuback,
+#adminmenuwrap {
+  background: #ec4000; }
+
+#adminmenu li.menu-top {
+  background: transparent;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+  margin: 10px;
+  border-radius: 3px;
+  border: 1px solid rgba(255, 255, 255, 0.32); }
+
+#adminmenu .wp-not-current-submenu .wp-submenu {
+  background: #32373c;
+  border-radius: 5px;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+  left: 138px; }
+
+#adminmenu .wp-submenu a:hover, #adminmenu a:hover {
+  color: #eee; }
+
+#adminmenu .wp-has-current-submenu .wp-submenu {
+  background: transparent; }
+
+#adminmenu a, #adminmenu .wp-submenu a, #adminmenu li.menu-top:hover, #adminmenu li.opensub > a.menu-top, #adminmenu li > a.menu-top:focus {
+  color: #fff; }
+
+#wp-admin-bar-wp-logo {
+  display: none; }
+
+.wp-menu-name {
+  font-family: "Open Sans";
+  line-height: 25px;
+  font-weight: 100; }
+
+div.wp-menu-image:before {
+  padding: 11px 0; }
+
+.folded div.wp-menu-image:before {
+  padding: 8px 0; }
+
+#adminmenu li.wp-has-current-submenu a.wp-has-current-submenu,
+#adminmenu li.menu-top:hover,
+#adminmenu li.opensub > a.menu-top,
+#adminmenu li > a.menu-top:focus {
+  background: rgba(0, 0, 0, 0.2); }
+
+.folded #wpcontent, .folded #wpfooter {
+  margin-left: 58px; }
+
+#collapse-menu {
+  margin: 10px; }
+
+#collapse-button {
+  color: #fff; }
+
+#collapse-button:focus, #collapse-button:hover {
+  color: #eee; }
+
+#wpfooter {
+  background: transparent;
+  color: #ffffff;
+  bottom: -42px; }
+
+#wpfooter a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600; }
+
+/*** tela de Login ***/
+.login {
+  background-image: url("../img/background-login.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.login form {
+  -webkit-box-shadow: 0 1px 3px rgba(23, 23, 23, 0.7);
+  -moz-box-shadow: 0 1px 3px rgba(23, 23, 23, 0.7);
+  box-shadow: 0 1px 3px rgba(23, 23, 23, 0.7); }
+
+#login h1 a,
+.login h1 a {
+  background-image: url(../img/wtek.png);
+  height: 81px;
+  width: 180px;
+  background-size: 180px 81px;
+  background-repeat: no-repeat; }
+
+#login {
+  padding: 5% 0 0 !important; }
+
+input[type=text]:focus, input[type=search]:focus, input[type=radio]:focus, input[type=tel]:focus, input[type=time]:focus, input[type=url]:focus, input[type=week]:focus, input[type=password]:focus, input[type=checkbox]:focus, input[type=color]:focus, input[type=date]:focus, input[type=datetime]:focus, input[type=datetime-local]:focus, input[type=email]:focus, input[type=month]:focus, input[type=number]:focus, select:focus, textarea:focus {
+  border-color: #ec4000;
+  box-shadow: 0 0 2px rgba(30, 140, 190, 0.8); }
+
+.login #backtoblog a,
+.login #nav a {
+  color: #777 !important; }
+
+/** Botão Login **/
+.wp-core-ui .button-primary {
+  background: #ec4000 !important;
+  border-color: #ec4000 !important;
+  box-shadow: 0 1px 0 #ec4000 !important;
+  text-shadow: none !important; }
+
+.wp-core-ui .button-primary:hover {
+  background: #111111 !important;
+  border-color: #111111 !important; }
+
+/*# sourceMappingURL=dashboard.css.map */

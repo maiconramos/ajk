@@ -1,0 +1,192 @@
+@font-face {
+  font-family: "Ubuntu Light";
+  src: url(../fonts/ubuntu-light.woff2); }
+@font-face {
+  font-family: "Ubuntu Regular";
+  src: url(../fonts/ubuntu-regular.woff2); }
+@font-face {
+  font-family: "Nexa Light";
+  src: url(../fonts/nexa-light.woff2); }
+@font-face {
+  font-family: "Nexa Regular";
+  src: url(../fonts/nexa-regular.woff2); }
+@font-face {
+  font-family: "Nexa Bold";
+  src: url(../fonts/nexa-bold.woff2); }
+#menu-principal {
+  background-color: #fe4500; }
+
+.banner {
+  background-image: url("../img/banner-solucoes.jpg");
+  background-position: center;
+  background-size: cover;
+  min-height: 280px;
+  margin: -50px 0 0px;
+  position: relative; }
+
+.oem {
+  padding-top: 120px;
+  padding-bottom: 80px; }
+  .oem .image-solucao {
+    margin: 30px auto; }
+  .oem p {
+    font-size: 18px;
+    font-family: "Nexa Light";
+    text-align: justify;
+    color: #7d7d7d;
+    line-height: 25px; }
+  .oem article {
+    text-align: center; }
+    .oem article ul {
+      padding: 0px;
+      list-style: none;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+      justify-content: space-around;
+      -webkit-align-content: stretch;
+      -ms-flex-line-pack: stretch;
+      align-content: stretch;
+      -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+      align-items: flex-start; }
+    .oem article li {
+      -webkit-order: 0;
+      -ms-flex-order: 0;
+      order: 0;
+      -webkit-flex: 0 1 130px;
+      -ms-flex: 0 1 130px;
+      flex: 0 1 130px;
+      -webkit-align-self: auto;
+      -ms-flex-item-align: auto;
+      align-self: auto; }
+    .oem article .icone-solucao {
+      max-width: 70px;
+      margin: 30px auto;
+      -webkit-animation-duration: 1s;
+      animation-duration: 1s;
+      -webkit-animation-fill-mode: both;
+      animation-fill-mode: both; }
+      .oem article .icone-solucao:hover {
+        -webkit-animation-name: jello;
+        animation-name: jello;
+        -webkit-transform-origin: center;
+        transform-origin: center; }
+    .oem article h5 {
+      font-family: "Nexa Bold";
+      font-size: 15px;
+      text-transform: uppercase;
+      color: #fe4500; }
+
+.title-category-product {
+  background-image: url("../img/fundo-categoria-nome.png");
+  background-position: center;
+  background-size: cover;
+  width: 360px;
+  height: 167px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, 25%);
+  bottom: -70px;
+  text-align: center;
+  padding-top: 70px; }
+  .title-category-product h1, .title-category-product h3 {
+    font-size: 33px;
+    font-family: "Nexa Bold";
+    color: white;
+    text-transform: uppercase; }
+
+.title-product {
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  bottom: -70px;
+  text-align: center;
+  padding-top: 70px; }
+  .title-product h3 {
+    font-size: 40px;
+    font-family: "Nexa Bold";
+    color: white;
+    text-transform: uppercase; }
+
+.contato {
+  margin-top: 90px;
+  text-align: center; }
+  .contato h4 {
+    text-align: center;
+    font-size: 30px;
+    font-family: "Nexa Bold";
+    color: #fe4500;
+    text-transform: uppercase;
+    margin-bottom: 40px; }
+
+form {
+  font-family: "Nexa Light";
+  text-align: left;
+  font-size: 15px;
+  color: #7d7d7d; }
+  form p {
+    margin-bottom: 5px;
+    margin-top: 10px;
+    font-size: 12px; }
+  form input, form textarea, form select {
+    background-color: transparent;
+    width: 100%;
+    border: 1px solid #fe4500;
+    margin-bottom: 10px;
+    padding: 5px 20px;
+    border-radius: 20px;
+    resize: none; }
+    form input:focus, form textarea:focus, form select:focus {
+      outline: none; }
+  form textarea {
+    height: 230px; }
+  form [type=submit] {
+    background-color: #fe4500;
+    border-color: #fe4500;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 5px 40px;
+    letter-spacing: 2px;
+    font-size: 12px;
+    cursor: pointer;
+    width: auto; }
+    form [type=submit]:hover {
+      background-color: #ff6f3a; }
+
+@media (max-width: 845px) {
+  .produtos-categoria .item {
+    -webkit-order: 0;
+    -ms-flex-order: 0;
+    order: 0;
+    -webkit-flex: 0 1 100%;
+    -ms-flex: 0 1 100%;
+    flex: 0 1 100%;
+    -webkit-align-self: auto;
+    -ms-flex-item-align: auto;
+    align-self: auto;
+    margin-bottom: 40px; }
+  .produtos-categoria .title a {
+    font-size: 20px; }
+
+  .title-category-product {
+    width: 270px;
+    height: 125px;
+    transform: translate(-50%, 50%);
+    padding-top: 55px; }
+    .title-category-product h1 {
+      font-size: 25px; } }
+
+/*# sourceMappingURL=solucoes.css.map */

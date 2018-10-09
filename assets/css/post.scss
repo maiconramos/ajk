@@ -1,0 +1,103 @@
+$laranja: #fe4500;
+$cor_fonte: #202020;
+
+.header-post{
+  min-height: 70vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 30%;
+  margin-top: -50px;
+}
+#menu-principal{
+  background-color: $laranja;
+}
+.titulo{
+  padding-top: 70px;
+  padding-bottom: 0px;
+  text-transform: uppercase;
+  margin-bottom: 0px;
+  text-align: center;
+}
+.corpo-texto{
+  text-align: justify;
+  position: relative;
+  .container{max-width: 900px; .col-md-12{ padding-top: 64px; padding-bottom: 50px; position: 64px}}
+  .wp-post-image{width: 100%; height: auto; margin-bottom: 20px;}
+  font-size: 18px; line-height: 1.6;
+  article{
+    max-width: 600px;
+    margin: 0 auto;
+    margin-bottom: 70px;
+  }
+}
+.social-share.share-desktop{
+  position: absolute;
+  top: 75px;
+  left: 15px;
+  z-index: 1;
+  margin-bottom: 0;
+  transition: .3s top,.3s left;
+  width: 50px;
+}
+.social-share.is_stuck{  margin-top: 70px;}
+.compartilhar-post{
+  list-style: none;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-content: stretch;
+  -ms-flex-line-pack: stretch;
+  align-content: stretch;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  padding: 0px;
+  li{
+    -webkit-order: 0;
+    -ms-flex-order: 0;
+    order: 0;
+    -webkit-flex: 0 1 100%;
+    -ms-flex: 0 1 100%;
+    flex: 0 1 100%;
+    -webkit-align-self: auto;
+    -ms-flex-item-align: auto;
+    align-self: auto;
+    margin-bottom: 10px;
+    img{
+      width: 30px;
+    }
+  }
+  }
+.social-share.share-mobile{
+  display: none;
+  .compartilhar-post{
+
+    li{
+      -webkit-flex: 0 1 50px;
+      -ms-flex: 0 1 50px;
+      flex: 0 1 50px;
+    }
+  }
+}
+
+@media (max-width: 890px) {
+  .social-share.share-desktop{
+    display: none;
+  }
+  .social-share.share-mobile{
+    display: block;
+  }
+  .titulo{
+    padding-top: 40px;
+  }
+  .corpo-texto .container .col-md-12{padding-top: 20px}
+}
